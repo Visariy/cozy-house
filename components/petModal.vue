@@ -32,10 +32,10 @@ const props = defineProps({
     type: Object,
     required: true,
   },
-  modalKey : {
+  modalKey: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 });
 
 const choosedKeys = ["age", "inoculations", "diseases", "parasites"];
@@ -92,17 +92,17 @@ const choosedKeys = ["age", "inoculations", "diseases", "parasites"];
       list-style: none;
       font-family: $headers-font;
       font-weight: 400;
-      li{
+      li {
         padding-bottom: 10px;
       }
     }
     ul li::before {
       content: "•";
       color: $button-normal-color; /* Замените на желаемый цвет */
-      display: inline-block; 
+      display: inline-block;
       width: 1em;
       margin-left: -1em;
-    } 
+    }
   }
 }
 </style>

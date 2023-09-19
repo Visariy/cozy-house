@@ -2,9 +2,7 @@
   <div>
     <Swiper
       :modules="SwiperGrid"
-      :slides-per-view="4"
-      :space-between="40"
-      :grid="{ rows: 2, fill: 'row' }"
+      :breakpoints="breakpoints"
       :centered-slides="false"
       :grab-cursor="true"
     >
@@ -18,6 +16,7 @@
 
 <script setup lang="ts">
 import { usePetStore } from "~/stores/pet";
+import { SwiperGrid } from "#imports";
 
 const petStore = usePetStore();
 
@@ -25,32 +24,32 @@ onMounted(() => {
   console.log(petStore.pets.length);
 });
 
-// const breakpoints = {
-//     300: {
-//         slidesPerView: 1,
-//         spaceBetween: 40,
-//         grid: {
-//             rows: 3,
-//             fill: 'row',
-//         },
-//     },
-//     768: {
-//         slidesPerView: 2,
-//         spaceBetween: 40,
-//         grid: {
-//             rows: 3,
-//             fill: 'row',
-//         },
-//     },
-//     1280: {
-//         slidesPerView: 3,
-//         spaceBetween: 50,
-//         grid: {
-//             rows: 2,
-//             fill: 'row',
-//         },
-//     },
-// }
+const breakpoints = {
+    300: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        grid: {
+            rows: 3,
+            fill: 'row',
+        },
+    },
+    768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+        grid: {
+            rows: 3,
+            fill: 'row',
+        },
+    },
+    1280: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        grid: {
+            rows: 2,
+            fill: 'row',
+        },
+    },
+}
 </script>
 
 <style lang="scss">

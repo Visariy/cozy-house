@@ -35,6 +35,9 @@
         >
       </ul>
     </li>
+    <BurgerMenu class="burger-menu" @click="toggleActive" :class="{active: isActive}">
+    </BurgerMenu>
+    <BurgerNavigation :class="{ active: isActive }"></BurgerNavigation>
   </nav>
 </template>
 
@@ -42,6 +45,36 @@
 import { useRoute } from "#vue-router";
 
 const route = useRoute();
+
+const isActive = ref(false);
+
+const toggleActive = () => {
+  isActive.value = !isActive.value
+  toggleScroll();
+}
+
+const isScrollEnabled = ref(false)
+
+const toggleScroll = () => {
+    if (isScrollEnabled.value) {
+        document.body.style.overflow = 'hidden'
+    } else {
+        enableScroll()
+    }
+    isScrollEnabled.value = !isScrollEnabled.value
+}
+
+const enableScroll = () => {
+    document.body.style.overflow = ''
+}
+
+onMounted(() => {
+    toggleScroll()
+})
+
+onBeforeUnmount(() => {
+    toggleScroll()
+})
 
 const props = defineProps({
   isLight: {
@@ -57,6 +90,7 @@ const props = defineProps({
 <style scoped lang="scss">
 @import "~/assets/scss/colors.scss";
 @import "~/assets/scss/typography.scss";
+@import "~/assets/scss/breakpoints.scss";
 .navbar {
   max-width: 1280px;
   margin: 0 auto;
@@ -65,8 +99,12 @@ const props = defineProps({
   align-items: center;
   justify-content: space-between;
   &__links {
+    display: block;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: $tablet){
+      display: none;
+    }
     .link {
       text-decoration: none;
       font-family: $links-font;
@@ -97,6 +135,12 @@ const props = defineProps({
         background: $button-normal-color;
         transition: width 0.3s;
       }
+    }
+  }
+  .burger-menu {
+    display: none;
+    @media screen and (max-width: $tablet) {
+      display: block;
     }
   }
 }

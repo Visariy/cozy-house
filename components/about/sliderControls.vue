@@ -10,9 +10,7 @@
 </template>
 
 <script setup lang="ts">
-
 const swiper = useSwiper();
-
 </script>
 
 <style scoped lang="scss">

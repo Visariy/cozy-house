@@ -26,6 +26,7 @@
 <style scoped lang="scss">
 @import "~/assets/scss/colors.scss";
 @import "~/assets/scss/typography.scss";
+@import "~/assets/scss/breakpoints.scss";
 .about-content {
   max-width: 1280px;
   align-items: center;
@@ -67,4 +68,20 @@
     }
   }
 }
+
+@media screen and (max-width: $dekstop) {
+  .about-content {
+    display: flex;
+    flex-direction: column-reverse;
+    .about-content__text {
+        max-width: 430px;
+        padding: 0 0 80px 0;
+      }
+    .about-content__image {
+      padding: 0;
+     
+    }
+  }
+}
+
 </style>

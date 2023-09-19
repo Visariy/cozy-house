@@ -23,7 +23,10 @@
 <style lang="scss">
 @import "~/assets/scss/colors.scss";
 @import "~/assets/scss/typography.scss";
+@import "~/assets/scss/breakpoints.scss";
 .donation {
+  margin: 0 auto;
+  max-width: 1200px;
   gap: 30px;
   padding: 80px 182px 100px 182px;
   display: grid;
@@ -33,7 +36,6 @@
       padding-bottom: 20px;
       max-width: 300px;
       text-align: center;
-      //styleName: h3;
       font-family: $headers-font;
       color: $dark-font-color;
       font-size: 35px;
@@ -45,7 +47,6 @@
     .bank-info {
       padding-bottom: 20px;
       margin: 0;
-      //styleName: h5;
       font-family: $headers-font;
       color: $dark-font-color;
       font-size: 15px;
@@ -92,6 +93,29 @@
   &__image {
     display: flex;
     align-self: center;
+  }
+}
+
+@media screen and (max-width: $dekstop) {
+  .donation {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .donation {
+    padding: 40px 0px 0px 0px;
+    &__text {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .description {
+      max-width: 351px;
+    }
+    &__image {
+      max-width: 351px;
+    }
   }
 }
 </style>

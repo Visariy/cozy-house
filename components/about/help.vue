@@ -36,6 +36,7 @@ const ways = [
 <style scoped lang="scss">
 @import "~/assets/scss/colors.scss";
 @import "~/assets/scss/typography.scss";
+@import "~/assets/scss/breakpoints.scss";
 .help {
   .title {
     font-family: $headers-font;
@@ -78,6 +79,30 @@ const ways = [
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: $dekstop) {
+
+  .help__ways {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .help__ways[data-v-c52aae1c] > :nth-child(6) {
+    margin: 0;
+  }
+
+  .help__ways[data-v-c52aae1c] > :last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .help__ways {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
   }
 }
 </style>

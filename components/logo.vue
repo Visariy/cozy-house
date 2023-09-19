@@ -1,26 +1,26 @@
 <template>
   <div class="logo">
     <h2 class="logo__title" :class="{ light: props.isLight }">Cozy House</h2>
-    <div class="logo__subtitle" :class="{ light: props.isLight }">Shelter for pets in Boston</div>
+    <div class="logo__subtitle" :class="{ light: props.isLight }">
+      Shelter for pets in Boston
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
 const props = defineProps({
   isLight: {
     type: Boolean,
-    default: false
-  }
-})
-
-
+    default: false,
+  },
+});
 </script>
 
 <style scoped lang="scss">
 @import "~/assets/scss/colors.scss";
 @import "~/assets/scss/typography.scss";
 .logo {
+  z-index: 200;
   &__title {
     margin: 0;
     font-family: $headers-font;

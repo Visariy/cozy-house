@@ -9,10 +9,13 @@
         the world, you will see!
       </p>
       <div class="text__button">
-        <UiBaseButton :button-style="'full'" :text="'Make a friend'"></UiBaseButton>
+        <UiBaseButton
+          :button-style="'full'"
+          :text="'Make a friend'"
+        ></UiBaseButton>
       </div>
     </div>
-    <img src="start-screen-puppy.png" alt="puppy" />
+    <img class="puppy" src="start-screen-puppy.png" alt="puppy" />
   </div>
 </template>
 
@@ -21,6 +24,7 @@
 <style scoped lang="scss">
 @import "~/assets/scss/colors.scss";
 @import "~/assets/scss/typography.scss";
+@import "~/assets/scss/breakpoints.scss";
 .navbar-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -66,6 +70,78 @@
       padding-bottom: 42px;
     }
     .text__button {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: $dekstop) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    &__text {
+      padding-bottom: 100px;
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+      max-width: 460px;
+      max-height: 322px;
+      .text__button {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .puppy {
+      max-width: 700px;
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    &__text {
+      padding-bottom: 200px;
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+      max-width: 460px;
+      max-height: 322px;
+      .main-appeal {
+        margin: 0;
+        font-family: Georgia;
+        font-size: 41px;
+        font-weight: 400;
+        padding-right: 0;
+        line-height: 57px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FAFAFA;
+        padding-bottom: 42px;
+      }
+      .sub-appeal {
+        margin: 0;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+        font-family: Arial;
+        color: #CDCDCD;
+        padding-bottom: 42px;
+      }
+   
+      .text__button {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .puppy {
+      max-width: 260px;
+      margin-left: auto;
     }
   }
 }

@@ -35,7 +35,7 @@
 <style lang="scss">
 @import "~/assets/scss/colors.scss";
 @import "~/assets/scss/typography.scss";
-
+@import "~/assets/scss/breakpoints.scss";
 .footer {
   background: $main-gradient;
   &__content {
@@ -91,7 +91,7 @@
       }
     }
     .locations {
-      padding-bottom: 69px;  
+      padding-bottom: 69px;
       max-width: 310px;
       .title {
         margin-bottom: 25px;
@@ -137,6 +137,31 @@
       display: flex;
       align-self: end;
     }
+  }
+}
+
+@media screen and (max-width: $dekstop) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+  }
+
+  .footer__content img:nth-child(3) {
+    grid-column: span 2;
+  } 
+}
+
+@media screen and (max-width: $tablet) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-image {
+    margin: 0 auto;
   }
 }
 </style>
