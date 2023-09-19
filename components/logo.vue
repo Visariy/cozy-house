@@ -1,17 +1,28 @@
 <template>
   <div class="logo">
-    <h2 class="logo__title">Cozy House</h2>
-    <div class="logo__subtitle">Shelter for pets in Boston</div>
+    <h2 class="logo__title" :class="{ light: props.isLight }">Cozy House</h2>
+    <div class="logo__subtitle" :class="{ light: props.isLight }">Shelter for pets in Boston</div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+const props = defineProps({
+  isLight: {
+    type: Boolean,
+    default: false
+  }
+})
+
+
+</script>
 
 <style scoped lang="scss">
 @import "~/assets/scss/colors.scss";
 @import "~/assets/scss/typography.scss";
 .logo {
   &__title {
+    margin: 0;
     font-family: $headers-font;
     font-size: 32px;
     font-weight: 400;
@@ -30,6 +41,9 @@
     letter-spacing: 0.1em;
     text-align: left;
     color: $subtitle-color;
+  }
+  .light {
+    color: $dark-font-color;
   }
 }
 </style>

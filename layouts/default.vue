@@ -1,10 +1,8 @@
 <template>
-    <slot />
-    <Footer />
+  <slot />
+  <Footer id="footer"/>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

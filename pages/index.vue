@@ -1,24 +1,40 @@
 <template>
-  <div class="main-container">
+  <section class="main-container">
     <AboutWelcome></AboutWelcome>
-  </div>
-  <div class="about-container">
+  </section>
+  <section class="about-container">
     <AboutDeclaration></AboutDeclaration>
-  </div>
-  <div class="slider-container">
+  </section>
+  <section class="slider-container">
     <div class="content">
-      <div class="title">
-        <h2 class="title top">Our friends who</h2>
-        <h2 class="title bottom">are looking for a houses</h2>
+      <div>
+        <h2 class="title">
+          Our friends who
+        <br />
+        are looking for a houses
+        </h2>
       </div>
-      <div class="slider-items">
+      <div>
         <AboutSlider></AboutSlider>
       </div>
       <div class="rest-pets-container">
-        <button class="rest-button">Get to know the rest</button>
+        <NuxtLink style="text-decoration: none" :to="'/petsList'">
+          <UiBaseButton
+            :button-style="'full'"
+            :text="'Get to know the rest'"
+            class="rest-button"
+            >Get to know the rest</UiBaseButton
+          >
+      </NuxtLink>
       </div>
     </div>
-  </div>
+  </section>
+  <section id="help" class="help-container">
+    <AboutHelp></AboutHelp>
+  </section>
+  <section class="donation-container">
+    <AboutDonation></AboutDonation>
+  </section>
 </template>
 
 <script setup lang="ts"></script>
@@ -39,28 +55,28 @@
     font-weight: 400;
     line-height: 45px;
     letter-spacing: 0.06em;
-    .top {
-      padding-top: 80px;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
-    .bottom {
-      padding-bottom: 60px;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
   }
   .content {
     max-width: 1280px;
     margin: 0 auto;
-    .slider-items {
+    .slider {
       padding-left: 40px;
       padding-right: 40px;
       display: flex;
       justify-content: space-between;
+      position: relative;
+      &__items {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+      }
     }
+
     .rest-pets-container {
       padding: 60px 0px 100px 0px;
       .rest-button {
@@ -69,5 +85,12 @@
       }
     }
   }
+}
+.help-container {
+  padding: 80px 40px 100px 40px;
+}
+
+.donation-container {
+  background: $section-dark-backgroud;
 }
 </style>

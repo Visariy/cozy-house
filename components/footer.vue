@@ -47,7 +47,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     .contacts {
-        max-width: 280px;
+      padding-bottom: 69px;
+      max-width: 280px;
       .title {
         margin-bottom: 25px;
         font-family: $headers-font;
@@ -63,7 +64,7 @@
         gap: 20px;
         padding-bottom: 20px;
         .info {
-          margin-bottom: 20px; 
+          margin-bottom: 20px;
           font-family: $headers-font;
           font-size: 20px;
           font-weight: 400;
@@ -90,7 +91,8 @@
       }
     }
     .locations {
-        max-width: 310px;
+      padding-bottom: 69px;  
+      max-width: 310px;
       .title {
         margin-bottom: 25px;
         font-family: $headers-font;
@@ -120,7 +122,7 @@
         display: flex;
         gap: 20px;
         .info {
-          margin-bottom: 20px; 
+          margin-bottom: 20px;
           font-family: $headers-font;
           font-size: 20px;
           font-weight: 400;
@@ -131,9 +133,9 @@
         }
       }
     }
-    .footer-image{
-        display: flex;
-        align-self: end;
+    .footer-image {
+      display: flex;
+      align-self: end;
     }
   }
 }

@@ -1,8 +1,5 @@
 <template>
-  <div class="navbar-container">
-    <Logo></Logo>
-    <Navbar></Navbar>
-  </div>
+  <Navbar></Navbar>
   <div class="main-content">
     <div class="main-content__text">
       <h2 class="main-appeal">Not only people need a house</h2>
@@ -12,7 +9,7 @@
         the world, you will see!
       </p>
       <div class="text__button">
-        <BaseButton :button-style="'full'" :text="'Make a friend'"></BaseButton>
+        <UiBaseButton :button-style="'full'" :text="'Make a friend'"></UiBaseButton>
       </div>
     </div>
     <img src="start-screen-puppy.png" alt="puppy" />
@@ -27,7 +24,7 @@
 .navbar-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 30px 30px 0px 30px;
+  padding: 60px 30px 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
