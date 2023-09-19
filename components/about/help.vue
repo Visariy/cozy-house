@@ -90,11 +90,11 @@ const ways = [
     justify-items: center;
   }
 
-  .help__ways[data-v-c52aae1c] > :nth-child(6) {
+  .help__ways > :nth-child(6) {
     margin: 0;
   }
 
-  .help__ways[data-v-c52aae1c] > :last-child {
+  .help__ways > :last-child {
     margin-right: 0;
   }
 }
@@ -105,11 +105,11 @@ const ways = [
     gap: 10px;
   }
 
-  .help__ways[data-v-c52aae1c] > :nth-child(6) {
+  .help__ways > :nth-child(6) {
     margin: 0;
   }
 
-  .help__ways[data-v-c52aae1c] > :last-child {
+  .help__ways > :last-child {
     margin-right: 0;
   }
 }
