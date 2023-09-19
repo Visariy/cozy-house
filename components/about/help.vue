@@ -104,5 +104,13 @@ const ways = [
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px;
   }
+
+  .help__ways[data-v-c52aae1c] > :nth-child(6) {
+    margin: 0;
+  }
+
+  .help__ways[data-v-c52aae1c] > :last-child {
+    margin-right: 0;
+  }
 }
 </style>
