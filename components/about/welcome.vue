@@ -15,7 +15,7 @@
         ></UiBaseButton>
       </div>
     </div>
-    <img class="puppy" src="start-screen-puppy.png" alt="puppy" />
+    <img class="puppy" :src="'/start-screen-puppy.png'" alt="puppy" />
   </div>
 </template>
 

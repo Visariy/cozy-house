@@ -4,28 +4,28 @@
       <div class="contacts">
         <h3 class="title">For questions and suggestions</h3>
         <div class="mail">
-          <img src="icon-email.svg" alt="mail" />
+          <img :src="'/icon-email.svg'" alt="mail" />
           <h4 class="info">email@shelter.com</h4>
         </div>
         <div class="number">
-          <img src="icon-phone.svg" alt="number" />
+          <img :src="'/icon-phone.svg'" alt="number" />
           <h4 class="info">+13 674 567 75 54</h4>
         </div>
       </div>
       <div class="locations">
         <h3 class="title">We are waiting for your visit</h3>
         <div class="first-adress">
-          <img src="icon-marker.svg" alt="marker" />
+          <img :src="'/icon-marker.svg'" alt="marker" />
           <h4 class="info">
             1 Central Street, Boston (entrance from the store)
           </h4>
         </div>
         <div class="second-adress">
-          <img src="icon-marker.svg" alt="marker" />
+          <img :src="'/icon-marker.svg'" alt="marker" />
           <h4 class="info">18 South Park, London</h4>
         </div>
       </div>
-      <img class="footer-image" src="footer-puppy.png" alt="dog" />
+      <img class="footer-image" :src="'/footer-puppy.png'" alt="dog" />
     </div>
   </div>
 </template>

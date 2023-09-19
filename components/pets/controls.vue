@@ -4,13 +4,13 @@
       :is-active="swiper.activeIndex === 0"
       @click="swiper.slidePrev()"
     >
-      <img class="reverse single-arrow" src="single_arrow.svg" />
+      <img class="reverse single-arrow" :src="'/single_arrow.svg'" />
     </UiRoundButton>
     <UiRoundButton
       :is-active="swiper.activeIndex === 0"
       @click="swiper.slideTo(0)"
     >
-      <img class="reverse double-arrow" src="double_arrow.svg" />
+      <img class="reverse double-arrow" :src="'/double_arrow.svg'" />
     </UiRoundButton>
     <UiRoundButton>
       <span class="page">{{ swiper.activeIndex + 1 }}</span>
@@ -19,10 +19,10 @@
       :is-active="swiper.isEnd"
       @click="swiper.slideTo(petStore.pets.length - 12)"
     >
-      <img class="double-arrow" src="double_arrow.svg" />
+      <img class="double-arrow" :src="'/double_arrow.svg'" />
     </UiRoundButton>
     <UiRoundButton :is-active="swiper.isEnd" @click="swiper.slideNext()">
-      <img class="single-arrow" src="single_arrow.svg" />
+      <img class="single-arrow" :src="'/single_arrow.svg'" />
     </UiRoundButton>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="about-content">
-    <img class="about-content__image" src="about-pets.png" alt="pets" />
+    <img class="about-content__image" :src="'/about-pets.png'" alt="pets" />
     <div class="about-content__text">
       <h2 class="title">About the shelter “Cozy House”</h2>
       <p class="subtitle">
@@ -74,14 +74,12 @@
     display: flex;
     flex-direction: column-reverse;
     .about-content__text {
-        max-width: 430px;
-        padding: 0 0 80px 0;
-      }
+      max-width: 430px;
+      padding: 0 0 80px 0;
+    }
     .about-content__image {
       padding: 0;
-     
     }
   }
 }
-
 </style>

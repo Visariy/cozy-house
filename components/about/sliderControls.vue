@@ -1,10 +1,10 @@
 <template>
   <div class="slider-controller">
     <UiRoundButton @click="swiper.slidePrev()">
-      <img class="back" src="Arrow.svg" />
+      <img class="back" :src="'/Arrow.svg'" />
     </UiRoundButton>
     <UiRoundButton @click="swiper.slideNext()">
-      <img class="forward" src="Arrow.svg" />
+      <img class="forward" :src="'/Arrow.svg'" />
     </UiRoundButton>
   </div>
 </template>

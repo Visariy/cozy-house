@@ -12,7 +12,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-katrine.png",
+      image: "/pets-katrine.png",
     },
     {
       id: "2",
@@ -24,7 +24,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-jennifer.png",
+      image: "/pets-jennifer.png",
     },
     {
       id: "3",
@@ -36,7 +36,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-woody.png",
+      image: "/pets-woody.png",
     },
     {
       id: "4",
@@ -48,7 +48,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-sophia.png",
+      image: "/pets-sophia.png",
     },
     {
       id: "5",
@@ -60,7 +60,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-timmy.png",
+      image: "/pets-timmy.png",
     },
     {
       id: "6",
@@ -72,7 +72,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-charly.png",
+      image: "/pets-charly.png",
     },
     {
       id: "7",
@@ -84,7 +84,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-scarlet.png",
+      image: "/pets-scarlet.png",
     },
     {
       id: "8",
@@ -96,7 +96,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-freddie.png",
+      image: "/pets-freddie.png",
     },
     {
       id: "9",
@@ -108,7 +108,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-katrine.png",
+      image: "/pets-katrine.png",
     },
     {
       id: "10",
@@ -120,7 +120,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-jennifer.png",
+      image: "/pets-jennifer.png",
     },
     {
       id: "11",
@@ -132,7 +132,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-woody.png",
+      image: "/pets-woody.png",
     },
     {
       id: "12",
@@ -144,7 +144,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-sophia.png",
+      image: "/pets-sophia.png",
     },
     {
       id: "13",
@@ -156,7 +156,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-timmy.png",
+      image: "/pets-timmy.png",
     },
     {
       id: "14",
@@ -168,7 +168,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-charly.png",
+      image: "/pets-charly.png",
     },
     {
       id: "15",
@@ -180,7 +180,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-scarlet.png",
+      image: "/pets-scarlet.png",
     },
     {
       id: "16",
@@ -192,7 +192,7 @@ export const usePetStore = defineStore("petStore", () => {
       inoculations: "none",
       diseases: "none",
       parasites: "none",
-      image: "pets-freddie.png",
+      image: "/pets-freddie.png",
     },
   ];
 

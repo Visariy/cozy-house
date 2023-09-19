@@ -1,11 +1,11 @@
 <template>
   <div class="donation">
-    <img class="donation__image" src="donation-dog.png" />
+    <img class="donation__image" :src="'/donation-dog.png'" />
     <div class="donation__text">
       <div class="title">You can also make a donation</div>
       <h5 class="bank-info">Name of the bank / Type of bank account</h5>
       <div class="card">
-        <img class="card__image" src="credit-card.svg" />
+        <img class="card__image" :src="'/credit-card.svg'" />
         <h4 class="card__number">8380 2880 8028 8791 7435</h4>
       </div>
       <p class="description">
