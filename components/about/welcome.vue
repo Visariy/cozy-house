@@ -103,12 +103,12 @@
     display: flex;
     flex-direction: column;
     &__text {
-      padding-bottom: 200px;
       display: flex;
       align-self: center;
       flex-direction: column;
       max-width: 460px;
       max-height: 322px;
+      padding-top: 0;
       .main-appeal {
         margin: 0;
         font-family: Georgia;

@@ -100,6 +100,14 @@
   .donation {
     display: flex;
     flex-direction: column-reverse;
+    &__text {
+      .title {
+        text-align: center;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
@@ -107,13 +115,18 @@
   .donation {
     padding: 40px 0px 0px 0px;
     &__text {
+      .title {
+        text-align: center;
+      }
       display: flex;
-      flex-direction: column-reverse;
+      align-items: center;
+      flex-direction: column;
     }
     .description {
       max-width: 351px;
     }
     &__image {
+      padding-bottom: 42px;
       max-width: 351px;
     }
   }

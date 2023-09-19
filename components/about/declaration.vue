@@ -82,4 +82,15 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .about-content {
+    .about-content__text {
+      .title {
+        text-align: center;
+      }
+    }
+  }
+  
+}
 </style>
